@@ -43,7 +43,7 @@ public partial class ActEliminar : ContentPage
         try
         {
             string codigo = txtCodigo.Text;
-            string url = "http://192.168.2.5/moviles/post.php?codigo:" + codigo;
+            string url = "http://192.168.2.5/moviles/post.php?codigo=" + codigo;
             WebClient cliente = new WebClient();
             var parametros = new System.Collections.Specialized.NameValueCollection();
             cliente.UploadValues(url, "DELETE", parametros);
