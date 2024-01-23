@@ -5,14 +5,14 @@
              Title="inicio">
     <VerticalStackLayout Spacing="20" Padding="25">
         <Label 
-            Text="Consumo de servicio web = GET"
+            Text="Consumo de servicio web"
             FontSize="20"
             HorizontalTextAlignment="Center"/>
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -32,8 +32,8 @@
                         <StackLayout>
                             <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition></RowDefinition>
-                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition></ColumnDefinition>
@@ -52,7 +52,6 @@
             </ListView.ItemTemplate>
         </ListView >
         <Button x:Name="btnAdd" Text="Agregar Estudiante" Clicked="btnAdd_Clicked"></Button>
-        <Button x:Name="btnDel" Text="Eliminar Estudiante" Clicked="btnDel_Clicked" ></Button>
-        <Button x:Name="btnAct" Text="Actualizar Estudiante" Clicked="btnAct_Clicked" ></Button>
+ 
     </VerticalStackLayout>
 </ContentPage>

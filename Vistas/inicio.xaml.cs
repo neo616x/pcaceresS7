@@ -6,7 +6,7 @@ namespace serviciosWeb.Vistas;
 
 public partial class inicio : ContentPage
 {
-	private const string Url = "http://172.22.64.1/moviles/post.php";
+	private const string Url = "http://192.168.2.5/moviles/post.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private ObservableCollection<Estudiante> estud;
 
@@ -35,13 +35,4 @@ public partial class inicio : ContentPage
 		Navigation.PushAsync(new ActEliminar(objEstudiante));
     }
 
-    private void btnDel_Clicked(object sender, EventArgs e)
-    {
-
-    }
-
-    private void btnAct_Clicked(object sender, EventArgs e)
-    {
-
-    }
 }
